@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../assets/Frame 5 (2).png';
 
 interface LogoBackgroundProps {
   className?: string;
@@ -7,7 +8,7 @@ interface LogoBackgroundProps {
 export function LogoBackground({ className }: LogoBackgroundProps) {
   return (
     <img 
-      src="/Frame 5 (2).png"
+      src={logo}
       alt="AIONCLIPS Logo"
       className={className}
       style={{ 
