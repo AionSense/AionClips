@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/Frame 5 (2).png';
+import logo from '/src/assets/Frame 5 (2).png';
 
 interface LogoBackgroundProps {
   className?: string;
