@@ -7,7 +7,7 @@ interface LogoBackgroundProps {
 export function LogoBackground({ className }: LogoBackgroundProps) {
   return (
     <img 
-      src="./Frame 5 (2).png"
+      src="/Frame 5 (2).png"
       alt="AIONCLIPS Logo"
       className={className}
       style={{ 
