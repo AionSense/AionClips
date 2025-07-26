@@ -1,10 +1,6 @@
 import React from 'react';
 
-interface TermsOfServiceProps {
-  onNavigate?: (page: string) => void;
-}
-
-export function TermsOfService({ onNavigate }: TermsOfServiceProps) {
+export function TermsOfService() {
   return (
     <div className="min-h-screen bg-background relative">
       {/* Background */}

@@ -1,10 +1,6 @@
 import React from 'react';
 
-interface PrivacyPolicyProps {
-  onNavigate?: (page: string) => void;
-}
-
-export function PrivacyPolicy({ onNavigate }: PrivacyPolicyProps) {
+export function PrivacyPolicy() {
   return (
     <div className="min-h-screen bg-background relative">
       {/* Background */}

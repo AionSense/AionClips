@@ -1,10 +1,6 @@
 import React from 'react';
 
-interface ComingSoonProps {
-  onNavigate?: (page: string) => void;
-}
-
-export function ComingSoon({ onNavigate }: ComingSoonProps) {
+export function ComingSoon() {
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
       {/* Background */}
