@@ -15,34 +15,35 @@ export function LandingPage() {
   ];
 
   return (
-    <div className="relative min-h-screen text-white overflow-visible">
-      {/* Background Logo - Full screen container */}
-      <div className="fixed inset-0 overflow-visible">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <LogoBackground className="opacity-90" />
-        </div>
+    <div className="min-h-screen bg-background relative">
+      {/* Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-black"></div>
+      
+      {/* Logo Background - positioned to allow glow to extend */}
+      <div className="fixed inset-0 flex items-center justify-center z-[1] pointer-events-none">
+        <LogoBackground className="opacity-[0.9]" />
+      </div>
+      
+      {/* Top Left Brand and Community Text */}
+      <div className="absolute top-8 left-8 z-10">
+        <h2 className="text-white text-4xl font-bold tracking-wider mb-4 logo-gradient">
+          AIONCLIPS
+        </h2>
+        <p className="text-white/80 text-sm uppercase tracking-wider max-w-xs leading-relaxed">
+          We are a community of creators united by shared success and driven by collective growth
+        </p>
       </div>
 
-      {/* Main Content */}
-      <div className="relative z-10 flex items-center justify-center min-h-screen">
-        <div className="text-center space-y-12 max-w-4xl mx-auto px-8">
-          {/* Brand Name */}
-          <h2 className="text-4xl font-bold tracking-wider text-white/90 mb-8">
-            AIONCLIPS
-          </h2>
-          
-          {/* Community Text */}
-          <p className="text-xl text-white/70 max-w-2xl mx-auto leading-relaxed">
-            We are a community of creators united by shared success and driven by collective growth
+      {/* Main Content Container */}
+      <div className="relative z-10 min-h-screen flex items-center justify-center">
+        <div className="text-center px-8">
+          {/* Subtitle */}
+          <p className="text-white/60 text-sm uppercase tracking-wider mb-8">
+            MADE BY CREATORS FOR CREATORS
           </p>
           
-          {/* Main Heading */}
-          <h1 className="text-6xl font-bold leading-tight tracking-wider">
-            MADE BY CREATORS<br />
-            FOR CREATORS
-          </h1>
-          
-          <h1 className="text-6xl font-bold leading-tight tracking-wider">
+          {/* Main Heading - Back to original size */}
+          <h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight tracking-tight mb-12">
             BUILD DREAMS<br />
             BIGGER THAN<br />
             YOURSELF
